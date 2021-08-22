@@ -11,16 +11,14 @@ import cadastrar from "../support/cadastro";
 const faker = require('faker');
 
 
+//var nome = faker.name.findName()
+//var email = nome.replace(' ', '').toLowerCase() + '@qa.com.br';
 
 
 describe("Desafio", () => {
     
     it("Criar usuário não sendo administrador", () => {
-        cadastrar.cadastroLogin();
-
-        var nome = faker.name.findName()
-        var email = nome.replace(' ', '').toLowerCase() + '@qa.com.br';
-        
+        cadastrar.cadastroLogin()
         cadastrar.preencherCadastro(faker.name.findName(), faker.internet.email(), faker.internet.password());
         cy.get('#root > div > div > form > div > div:nth-child(3) > div > a').should('have.text', "Cadastro realizado com sucesso")
     
