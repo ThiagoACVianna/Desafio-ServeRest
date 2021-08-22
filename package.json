@@ -1,0 +1,16 @@
+{
+  "name": "desafio-serverest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.0",
+    "faker": "^5.5.3"
+  }
+}

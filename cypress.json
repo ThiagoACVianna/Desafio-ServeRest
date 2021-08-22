@@ -1,0 +1,7 @@
+{
+
+    "baseUrl": "https://front.serverest.dev",
+    "tesFiles": "**/*.sepc*",
+    "defaoutCommandTimeout": 10000
+
+}
