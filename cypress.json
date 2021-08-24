@@ -1,7 +1,7 @@
 {
 
     "baseUrl": "https://front.serverest.dev",
-    "tesFiles": "**/*.sepc*",
+    "testFiles": "**/*.spec*",
     "defaoutCommandTimeout": 10000
 
 }

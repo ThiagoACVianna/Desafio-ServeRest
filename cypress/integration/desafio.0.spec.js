@@ -20,7 +20,7 @@ describe("Desafio", () => {
     // o primeiro teste sempre falha.
 
     it("Criar usuário não sendo administrador", () => {
-        cadastrar.cadastroLogin()
+        cadastrar.cadastroLogin();
         cadastrar.preencherCadastro(faker.name.findName(), faker.internet.email(), faker.internet.password());
         cy.get('#root > div > div > form > div > div:nth-child(3) > div > a').should('have.text', "Cadastro realizado com sucesso")
     
@@ -28,7 +28,7 @@ describe("Desafio", () => {
 
     it("Adicionar um produto na lista", () => {
 
-        cy.get('#root > div > div > div.container-fluid > div > section > div:nth-child(3) > div > div > a:nth-child(3) > button').click();
+        cy.get('#root > div > div > div.container-fluid > div > section > div:nth-child(2) > div > div > a:nth-child(3) > button').click();
 
 
     });
